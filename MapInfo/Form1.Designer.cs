@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -77,7 +79,7 @@
             // 
             this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown1.DecimalPlaces = 7;
-            this.numericUpDown1.Location = new System.Drawing.Point(412, 12);
+            this.numericUpDown1.Location = new System.Drawing.Point(412, 28);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             200,
             0,
@@ -97,7 +99,7 @@
             // 
             this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown2.DecimalPlaces = 7;
-            this.numericUpDown2.Location = new System.Drawing.Point(570, 12);
+            this.numericUpDown2.Location = new System.Drawing.Point(570, 28);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             200,
             0,
@@ -116,7 +118,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(412, 38);
+            this.textBox1.Location = new System.Drawing.Point(412, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(305, 20);
@@ -133,9 +135,9 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(412, 90);
+            this.groupBox1.Location = new System.Drawing.Point(412, 106);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 313);
+            this.groupBox1.Size = new System.Drawing.Size(305, 297);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacje o pogodzie (OpenWeatherMap)";
@@ -151,7 +153,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 64);
+            this.textBox2.Location = new System.Drawing.Point(412, 80);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(224, 20);
             this.textBox2.TabIndex = 5;
@@ -159,7 +161,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(642, 64);
+            this.button1.Location = new System.Drawing.Point(642, 80);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 20);
             this.button1.TabIndex = 6;
@@ -167,11 +169,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(409, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Długość";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(567, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Szerokość";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 415);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
@@ -202,6 +224,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
